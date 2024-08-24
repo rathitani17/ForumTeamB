@@ -1,0 +1,58 @@
+.image-container {
+  position: relative;
+}
+
+.search-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-bar form {
+  display: flex;
+  width: 100%;
+}
+
+.search-bar input[type="search"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  height: 40px; /* decreased the height to 40px */
+}
+
+.search-bar button[type="submit"] {
+  padding: 15px 30px;
+  font-size: 20px;
+  height: 40px; /* decreased the height to 40px */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .search-bar input[type="search"] {
+    padding: 12px;
+    font-size: 16px;
+  }
+  .search-bar button[type="submit"] {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar input[type="search"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .search-bar button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
