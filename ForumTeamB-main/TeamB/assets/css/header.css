@@ -1,0 +1,149 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  position: relative;
+}
+
+.search-bar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-bar form {
+  display: flex;
+  width: 100%;
+}
+
+.search-bar input[type="search"] {
+  width: 2500px;
+  padding: 15px;
+  font-size: 20px;
+  height: 40px; /* decreased the height to 40px */
+}
+
+.search-bar button[type="submit"] {
+  padding: 15px 30px;
+  font-size: 20px;
+  height: 40px; /* decreased the height to 40px */
+  
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .search-bar input[type="search"] {
+    padding: 12px;
+    font-size: 16px;
+  }
+  .search-bar button[type="submit"] {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-bar input[type="search"] {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .search-bar button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+/* 
+<!--categories css--> */
+
+.categories-container {
+  position: absolute;
+  top: 450px; 
+  right: 0;
+  bottom: 1ch; /* add this to keep it above the footer */
+  right: 100px;
+  width: 300px; 
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.categories-search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#categories-select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%; /* Increase the width of the select box */
+  margin-right: 10px; /* Reduce the margin to the right of the select box */
+}
+
+.categories-search button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%; /* Increase the width of the button */
+}
+
+.categories-search button:hover {
+  background-color: #3e8e41;
+}
+
+.categories-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categories-list li {
+  margin-bottom: 10px;
+}
+
+.categories-list a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+.categories-list a:hover {
+  color: #23527c;
+}
+
+/* Add media query to make it responsive categories responsive */
+@media (max-width: 768px) {
+  .categories-container {
+    width: 100%;
+    position: relative;
+    right: 0px;
+  }
+  #categories-select {
+    width: 60%;
+  }
+  .categories-search button {
+    width: 40%;
+  }
+}
+
+

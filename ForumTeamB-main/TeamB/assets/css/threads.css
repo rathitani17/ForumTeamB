@@ -1,0 +1,25 @@
+.container_b {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .item:last-child {
+    border-bottom: none;
+  }
+
+  .separator {
+    width: 1px;
+    height: 120%;
+    background-color: #ddd;
+    margin-right: 20px;
+  } 
